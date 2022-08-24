@@ -2,7 +2,7 @@
 
 ### CAST(expresion AS datatype)
 
-CAST converts the *expresion* into a *datatype*. 
+CAST converts the *expression* into a *datatype*. 
 ```
 Example: CAST(12 as varchar) returns "12"
 ```
