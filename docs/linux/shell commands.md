@@ -80,5 +80,8 @@
   ...
   N-1: PATN N
   ```
+## Lookup and inspecting
 
+* **ls \[OPTIONS\]"": "list directory contents" - lists the contents of the current working directory.
+  
 #linux, #shell
