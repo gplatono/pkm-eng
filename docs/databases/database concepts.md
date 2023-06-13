@@ -1,3 +1,9 @@
 # Database concepts
 
 When an RDBMS query is executed, it returns what is known as a **result set**, i.e., the set of rows of data that satisfy the query along with some query metadata, e.g., column names, etc., depending on the specific RDBMS. If a query is frequently reused, it can be stored as a view. A **view** is a virtual table constructed as a result of some query to other tables. Views are dynamic tables which can be described as named result sets of queries. As such, they don't exist physically in the database, moreover, they don't usually store the result set items directly, but rather every time the view is accessed the query is executed and the result set is retrieved. Views are typically read-only, but they can also be updatable if the query engine is capable of mapping the query result that underlies the view back to the physical tables. It is possible to save views as physical tables through a process called **materialization**. The resulting object is known as **materialized view**. Materialization is used for caching purposes, e.g., to locally store results of quesries to remote tables or storing intermediate results of multi-step computations.
+
+Relational DBMS support the following **data integrity** mechanisms:
+* **Entity Integrity**: every row in a given table is unique.
+* **Domain Integrity**: DBMS system enforces that the content in every column satifies the type and range constraints.
+* **Referential Integrity**: DBMS system disallows deletion of records referred to by other records.
+* **User-Defined Integrity**: Includes additional custom rules not covered by the other integrity types.
